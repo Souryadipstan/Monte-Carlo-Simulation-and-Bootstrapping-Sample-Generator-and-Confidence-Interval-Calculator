@@ -9,7 +9,7 @@ class Simulation:
 
     # Confidence interval
 
-    def bootstrap_ci(self,input_array,sim_size,sample_size,alpha):
+    def bootstrap_ci(self,input_array,sim_size,sample_size,alpha = 0.05):
 
         try:
 
@@ -25,7 +25,7 @@ class Simulation:
 
             traceback.print_exception(*sys.exc_info())
 
-    def mc_ci(self,input_array,sim_size,sample_size,alpha):
+    def mc_ci(self,input_array,sim_size,sample_size,alpha = 0.05):
 
         try:
 
@@ -43,7 +43,7 @@ class Simulation:
 
     # Sample generation
 
-    def bootstrap_sm(self,input_array,sim_size,sample_size,alpha):
+    def bootstrap_sm(self,input_array,sim_size,sample_size):
 
         try:
 
@@ -59,7 +59,7 @@ class Simulation:
 
             traceback.print_exception(*sys.exc_info())
 
-    def mc_sm(self,input_array,sim_size,sample_size,alpha):
+    def mc_sm(self,input_array,sim_size,sample_size):
 
         try:
 
