@@ -7,7 +7,7 @@ class Simulation:
     def __init__(self):
         pass
 
-    # Confidence Interval
+    # Confidence interval
 
     def bootstrap_ci(self,input_array,sim_size,sample_size,alpha):
 
